@@ -252,7 +252,7 @@ def checar_registro(contract):
   print("Iniciando chamada para 'checarRegistro'...")
   try:
       resultado = contract.functions.checarRegistro(hash_arquivo).call()
-
+      print("\n" + "-"*20)
       print("Registro Encontrado")
       print(f"Nome Original: {resultado[0]}")
       print(f"Hash Metadados: {resultado[1]}")
@@ -260,6 +260,7 @@ def checar_registro(contract):
 
       data = datetime.fromtimestamp(resultado[3])
       print(f"Data: {data}")
+
 
   except Exception as e:
       print(f"ERRO durante a chamada: {e}")
@@ -288,21 +289,24 @@ def main():
     abi_object = json.loads(CONTRACT_ABI) 
     contract = w3.eth.contract(address=CONTRACT_ADDRESS, abi=abi_object)
 
-    print("Escolha a função:")
-    print("1 - Registrar Arquivo")
-    print("2 - Checar Registro")
-    print("3 - Sair")
-    comando = int(input(""))
+    
+    while(True):
+      print("Escolha a função:")
+      print("1 - Registrar Arquivo")
+      print("2 - Checar Registro")
+      print("3 - Sair")
 
+      comando = int(input(""))
 
-    match comando:
-        case 1:
-            registrar_arquivo(w3, contract)
-        case 2:
-            checar_registro(contract)
-        case _:
-            return
-        
+      match comando:
+          case 1:
+              registrar_arquivo(w3, contract)
+          case 2:
+              checar_registro(contract)
+          case _:
+              return
+      
+      print("-"*20)
 
 
 if __name__ == "__main__":  

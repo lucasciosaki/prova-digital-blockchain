@@ -70,7 +70,7 @@ Este projeto contém um smart contract, que pode ser visitado em "/contracts/Pro
 7. Cole todo o abi gerado no lugar da variável CONTRACT_ABI em "interface.py"
 
 ## Finalmente, vamos rodar a interface com o Smart Contract 
-**(Deixei disponível um pdf e um json na pasta "/documents" para teste, com nome "exemplo1.pdf" e "exemplo1.json")**
+**(Deixei disponível 3 pdfs e 2 jsons na pasta "/documents" para teste)**
 
 1. Rode a interface
    ```
@@ -81,20 +81,18 @@ Este projeto contém um smart contract, que pode ser visitado em "/contracts/Pro
     1
    ./documents/exemplo1.pdf
     ```
-5. Selecione (Y) temos um json de metadados de exemplo
+4. Selecione (Y) temos um json de metadados de exemplo
     ```
    Y
    ./documents/exemplo1.json
     ```
 
-7. Agora vamos testar buscar esse registro na blockchain
-    ```
-   python3 interface.py
-    ```
-8. Escolha a funçào 2 (Checar Registro)
+5. Agora vamos testar buscar esse registro na blockchain, escolha a função 2 (Checar Registro)
     ```
    2
    ./documents/exemplo1.pdf
     ```
-10. As informações guardadas na blockchain devem ser retornadas.
+6. Fique a vontade para testar os outros arquivos
+
+7. Para sair do programa, basta escolher a opção 3 (Sair).
 
