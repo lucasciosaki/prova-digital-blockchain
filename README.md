@@ -70,7 +70,7 @@ Este projeto contém um smart contract, que pode ser visitado em "/contracts/Pro
 7. Cole todo o abi gerado no lugar da variável CONTRACT_ABI em "interface.py"
 
 ## Finalmente, vamos rodar a interface com o Smart Contract 
-**(Deixei disponível 3 pdfs e 2 jsons na pasta "/documents" para teste)**
+**(Deixei disponível 2 pdfs e 1 png, e 2 jsons simulando metadados, na pasta "/documents" para teste)**
 
 1. Rode a interface
    ```
