@@ -1,0 +1,10 @@
+{
+  "titulo": "Relatório Anual",
+  "autor": "Maria Silva",
+  "data_publicacao": "2024-12-31",
+  "versao": "1.0.2",
+  "tags": ["finanças", "relatório", "anual"],
+  "status": "publicado",
+  "arquivo_link": "https://exemplo.com/documentos/relatorio_anual_2024.pdf",
+  "tamanho_bytes": 512000
+}

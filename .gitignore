@@ -1,0 +1,25 @@
+node_modules
+.env
+
+# Hardhat files
+/cache
+/artifacts
+
+# TypeChain files
+/typechain
+/typechain-types
+
+# solidity-coverage files
+/coverage
+/coverage.json
+
+/codigos_importantes.txt
+/contractAddress.txt
+
+# Hardhat Ignition default folder for deployments against a local node
+ignition/deployments/chain-31337
+
+# Ambiente virtual do Python
+.venv/
+venv/
+__pycache__/
