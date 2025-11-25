@@ -5,25 +5,27 @@ Este projeto contém um smart contract, que pode ser visitado em "/contracts/Pro
 > **Disclaimer:** Este projeto tem fins puramente acadêmicos, portanto, as chaves privadas são explicitas e não deve ser usado em ambiente real.
 
 
+## Pré-Requisitos
+1. Instale o Hyperledger Besu seguindo o tutorial na página oficial: [Tutorial Besu ](https://besu.hyperledger.org/private-networks/get-started/install/binary-distribution). Lembre de colocar o "/bin" como PATH do seu ambiente.
+
+2. Instalar o Node.js e npm:
+   Pode ser instalado seguindo o tutorial em: [Tutorial Node.js](https://nodejs.org/en/download)
+
+3. Certifique-se de ter o Python 3 instalado
+
 ## Instalação e Configuração
 
 1. Em seu bash, clone o repositório e entre nele:
     ```
-    git clone [https://github.com/lucasciosaki/prova-digital-blockchain.git](https://github.com/lucasciosaki/prova-digital-blockchain.git)
+    git clone https://github.com/lucasciosaki/prova-digital-blockchain.git
     cd prova-digital-blockchain
     ```
-3. Instale o Hyperledger Besu seguindo o tutorial na página oficial: [Tutorial Besu ](https://besu.hyperledger.org/private-networks/get-started/install/binary-distribution)
 
-4. Instalar o Node.js e npm:
-   Pode ser instalado seguindo o tutorial em: [Tutorial Node.js](https://nodejs.org/en/download)
-
-5. Certifique-se de ter o Python 3 instalado
-
-4. Instale as dependencias citadas no package.json apenas com o seguinte comando:
+3. Instale as dependencias citadas no package.json apenas com o seguinte comando:
    ```
    npm install
    ```
-6. Instale as dependências do Python (dependendo do SO, precisa criar um ambiente virtual do Python antes)
+4. Instale as dependências do Python (dependendo do SO, precisa criar um ambiente virtual do Python antes)
    ```
    pip install -r requirements.txt
    ```
@@ -61,9 +63,11 @@ Este projeto contém um smart contract, que pode ser visitado em "/contracts/Pro
     ```
 4. Copie o endereço do contrato mostrando no terminal (Ex: 0x123...)
 5. Entre no arquivo "interface.py" e troque a variável CONTRACT_ADDRESS pelo novo endereço
+   
+> As etapas 6 e 7 somente são necessárias se houver alterações no contrato "Prova_Digital"
+
 6. Entre no arquivo "Prova_Digital.json" dentro de "artifacts/contracts/Prova_Digital.sol/", copie tudo dentro de abi.
 7. Cole todo o abi gerado no lugar da variável CONTRACT_ABI em "interface.py"
-8. Salve o arquivo .py
 
 ## Finalmente, vamos rodar a interface com o Smart Contract 
 **(Deixei disponível um pdf e um json na pasta "/documents" para teste, com nome "exemplo1.pdf" e "exemplo1.json")**
@@ -93,3 +97,4 @@ Este projeto contém um smart contract, que pode ser visitado em "/contracts/Pro
    ./documents/exemplo1.pdf
     ```
 10. As informações guardadas na blockchain devem ser retornadas.
+
